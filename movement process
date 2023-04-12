@@ -1,0 +1,63 @@
+float x,float y,float z,float wrist, float grip, float phi
+
+
+
+300,0,50,90,70,1000
+
+a0,a1,a2,wrist,grip,a3+300
+
+90,90,90,90,70,390
+
+
+process
+//on top of test strip
+325,-60,150,90,10,1000
+
+//position before take new test strip
+325,-60,-15,90,10,1000
+
+//position to take new test strip
+325,-60,-15,90,71,1000
+
+
+//after removing new test strip
+325,-60,150,90,71,1000
+
+//on top of water container
+340,140,150,90,71,1000
+
+// into water container
+340,140,-25,90,71,1000
+
+// bring out from water container
+340,140,150,90,71,1000
+
+// straight up
+
+180,90,90,90,71,390
+
+// move to the camera before take picture
+0,340,250,90,71,1000
+
+0,340,150,90,71,1000
+
+0,550,50,90,71,100
+
+// move beneath the camera
+0,550,50,0,71,100
+
+//go back
+0,450,150,0,71,1000 
+
+0,340,250,90,71,1000
+
+180,90,90,90,71,390
+
+//discard test strip
+325,-260,150,90,71,1000
+325,-260,-100,90,71,1000
+325,-260,-100,90,10,1000
+
+
+
+
