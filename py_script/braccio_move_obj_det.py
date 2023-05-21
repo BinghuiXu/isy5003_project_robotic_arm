@@ -1,6 +1,7 @@
 import serial
 import time
 from object_detection_fun import take_pictures, object_detection
+from tagui import *
     
 
 
@@ -73,6 +74,14 @@ while teststrip_place_2!=None:
     take_pictures()
     teststrip_place_2=object_detection()
     print(teststrip_place_2)
+    
+
+url = "http://localhost:3000/"
+open_browser()
+navigate(url)
+
+refresh_page()
+
 
 
 
