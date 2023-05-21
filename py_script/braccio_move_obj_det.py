@@ -1,7 +1,7 @@
 import serial
 import time
 from object_detection_fun import take_pictures, object_detection
-from tagui import *
+import rpa as tagui
     
 
 
@@ -76,12 +76,8 @@ while teststrip_place_2!=None:
     print(teststrip_place_2)
     
 
-url = "http://localhost:3000/"
-open_browser()
-navigate(url)
-
-refresh_page()
-
+tagui.init()
+tagui.url('http://localhost:3000/')
 
 
 
